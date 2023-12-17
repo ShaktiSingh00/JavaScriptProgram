@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+
+</head>
+<body>
+    <h1>Shakkti Singh</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const shakti=function(){
+        console.log("Shakti Sidjfdsjngh");
+    }
+
+    const changeMe=function()
+    {
+        document.querySelector('h1').innerHTML="My name s shaksjadashahdgti"
+    }
+
+    const name=setTimeout(changeMe,2000)
+    document.querySelector('#stop').addEventListener('click',function()
+    {
+        clearTimeout(name);
+        console.log("stop")
+    })
+       
+
+
+
+
+/*    setTimeout(function(){
+        console.log("Shakti SIngh");
+    },3000)*/
+
+</script>
+</html>
